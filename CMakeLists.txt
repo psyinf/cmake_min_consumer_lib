@@ -17,7 +17,7 @@ add_library(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 
 target_include_directories(${PROJECT_NAME} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/>
-  $<INSTALL_INTERFACE:minConsumerLib>  ${CMAKE_SOURCE_DIR} # <prefix>/include/mylib
+  $<INSTALL_INTERFACE:minConsumerLib>  ${CMAKE_SOURCE_DIR} 
 )
 
 target_link_libraries(${PROJECT_NAME}
@@ -30,7 +30,7 @@ target_sources(${PROJECT_NAME}
 PRIVATE 
     src/minConsumerLib.cpp
 PUBLIC
-    src/minConsumerLib.h
+    "include/minConsumerLib.h"
 )
 
 
