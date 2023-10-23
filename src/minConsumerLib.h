@@ -2,7 +2,7 @@
 
 namespace minConsumerLib{
  
-    void consumeMinLib();
+void consumeMinLib();
 
  
 } //namespace minConsumerLib

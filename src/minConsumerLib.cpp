@@ -4,11 +4,11 @@
 
 namespace minConsumerLib {
  
-    void consumeMinLib() {
+void consumeMinLib() {
 
-        std::cout << "minConsumerLib::consumeMinLib()" << std::endl;
-        minLib::ClassWithWarnings cww;
-        cww.doSomething();
-    }
+    std::cout << "minConsumerLib::consumeMinLib()" << std::endl;
+    minLib::ClassWithWarnings cww;
+    cww.doSomething();
+}
  
 } //namespace minConsumerLib

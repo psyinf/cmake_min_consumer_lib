@@ -10,19 +10,21 @@ FetchContent_Declare(
   
   #SYSTEM
 )
-
 FetchContent_MakeAvailable(minLib)
- 
+
 add_library(${PROJECT_NAME} STATIC)
+add_library(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+
 target_link_libraries(${PROJECT_NAME}
 PUBLIC
     minLib::minLib
 )
 
+
 target_sources(${PROJECT_NAME}
 PRIVATE 
     src/minConsumerLib.cpp
-INTERFACE
+PUBLIC
     src/minConsumerLib.h
 )
 
