@@ -6,7 +6,7 @@ include(FetchContent)
 FetchContent_Declare(
   minLib
   GIT_REPOSITORY https://github.com/psyinf/cmake_min_lib.git
-  GIT_TAG        f46a822abc353a4679d74be428a35ebc597f10ca
+  GIT_TAG        HEAD
   
   #SYSTEM
 )
